@@ -1,0 +1,85 @@
+.match-list {
+  display: block;
+  margin-top: 20px;
+  height: calc(100vh - var(--header-height) - var(--body-padding) - 25px);
+  overflow-y: auto;
+}
+
+.item {
+  display: block;
+  margin-bottom: 12px;
+  padding: 16px;
+  background-color: #0b0e12;
+
+  .border {
+    display: flex;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .team {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      .team-icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .score-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      text-align: center;
+
+      .score {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24.2px;
+        margin-bottom: 4px;
+      }
+
+      .status {
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+
+        &.scheduled {
+          background-color: #eb0237;
+        }
+
+        &.ongoing {
+          background-color: #eb6402;
+        }
+
+        &.finished {
+          background-color: #43ad28;
+        }
+      }
+    }
+
+    .arrow-icon {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .match-info {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-top: 32px;
+    padding: 12px;
+  }
+}

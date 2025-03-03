@@ -1,0 +1,39 @@
+.btn {
+    background-color: #eb0237;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #94142f;
+    }
+  
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  
+    .label {
+      margin-right: 8px;
+    }
+  
+    .loading {
+      width: 16px;
+      height: 16px;
+      animation: spin 1s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }

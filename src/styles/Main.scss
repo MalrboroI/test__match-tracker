@@ -1,0 +1,23 @@
+@use "./byDefault.scss";
+@use "./root.scss";
+@use "./app.scss";
+@use "./loaderFronAPI.scss";
+@use "./error.scss";
+@use "./buttons.scss";
+@use "./cards.scss";
+@use "./header.scss";
+@use "./matchInfo.scss";
+@use "./matchItem.scss";
+@use "./noData.scss";
+@use "./statusAPI.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  padding: var(--body-padding);
+  font-family: "Inter 24pt", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  overflow: hidden;
+}
