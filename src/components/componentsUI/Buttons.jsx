@@ -3,7 +3,7 @@ import refreshImg from "../../img/Refresh.svg";
 
 const Button = ({ isLoading, init }) => {
   return (
-    <button className="btn" onClick={init}>
+    <button className="btn-loading" onClick={init}>
       <span className="label">Обновить</span>
       {isLoading && (
         <img className="loading" src={refreshImg} alt="Button loading icon" />

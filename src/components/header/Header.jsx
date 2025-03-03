@@ -7,15 +7,15 @@ const Header = ({ loading, error, matches }) => {
   return (
     <header className="header">
       <HeaderLogo />
-      <div className="left">
+      <div className="right">
         {error && (
-          <div className="error-card">
+          <div className="error-message">
             <img
-              className="error-icon"
+              className="error-img"
               src={errorImg}
               alt="loading error icon"
             />
-            <span className="error-text">
+            <span className="error-text ">
               Ошибка: не удалось загрузить информацию
             </span>
           </div>

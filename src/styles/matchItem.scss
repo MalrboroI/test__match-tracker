@@ -20,6 +20,8 @@
     align-items: center;
 
     .team {
+      font-family: "Inter", serif;
+      font-weight: 500;
       display: flex;
       align-items: center;
       gap: 14px;
@@ -38,6 +40,8 @@
       text-align: center;
 
       .score {
+        font-family: "Inter", serif;
+        font-weight: 600;
         font-weight: 600;
         font-size: 20px;
         line-height: 24.2px;
@@ -45,7 +49,11 @@
       }
 
       .status {
+        font-family: "Inter", serif;
+        font-weight: 600;
         padding: 4px 8px;
+        min-width: 92px;
+        min-height: 27px;
         border-radius: 4px;
         font-size: 12px;
         font-weight: bold;

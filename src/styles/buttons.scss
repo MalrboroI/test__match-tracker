@@ -1,13 +1,13 @@
-.btn {
-    background-color: #eb0237;
-    color: #fff;
+.btn-loading {
+    background-color: #EB0237;
+    color: #FFFFFF;
     border: none;
     padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    min-width: 204px;
+    min-height: 58px;
   
     &:hover {
       background-color: #94142f;
@@ -15,11 +15,15 @@
   
     &:disabled {
       background-color: #ccc;
-      cursor: not-allowed;
+      cursor: pointer;
     }
   
     .label {
-      margin-right: 8px;
+      font-family: "Inter", serif;
+      font-weight: 600;
+      margin-right: 10px;
+      font-size: 18px;
+      line-height: 1.4;
     }
   
     .loading {

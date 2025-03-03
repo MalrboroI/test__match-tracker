@@ -17,8 +17,8 @@ const MatchInfo = ({ team }) => {
               <span>{username}</span>
             </div>
 
-            <div className="player">
-              <span className="kills-span">Kills:</span>
+            <div className="player-kills">
+              <span className="kills-span">Убийств:</span>
               <span>{kills}</span>
             </div>
 

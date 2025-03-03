@@ -4,24 +4,25 @@
   align-items: center;
   justify-content: space-between;
 
-  .left {
+  .right {
     display: flex;
     align-items: center;
   }
 
-  .errorCard {
+  .error-message {
     padding: 14px 24px;
     background-color: #0f1318;
     margin-right: 12px;
   }
 
-  .errorIcon {
+  .error-img {
     width: 28px;
     height: 28px;
     margin-right: 10px;
   }
 
-  .errorText {
+  .error-text {
+    font-family: "Inter", serif;
     font-size: 18px;
     font-weight: 500;
   }

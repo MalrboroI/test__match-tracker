@@ -12,11 +12,13 @@
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
       gap: 8px;
+      justify-items: end;
 
       .player {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        min-width: 149px;
+        min-height: 36px;
 
         img {
           width: 36px;
@@ -25,13 +27,25 @@
         }
 
         span {
-          font-size: 14px;
-          font-weight: 500;
+          font-family: "Inter", serif;
+          font-weight: 600;
+          font-size: 16px;
           margin-right: 4px;
         }
+      }
+      .player-kills {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 81px;
+        min-height: 24px;
 
         .kills-span {
+          font-family: "Inter", serif;
+          font-weight: 500;
           color: #fafafa66;
+          font-size: 14px;
+          margin-right: 4px;
         }
       }
     }
@@ -50,14 +64,17 @@
       justify-content: space-around;
       display: flex;
       align-items: center;
+      font-family: "Inter", serif;
+      font-weight: 600;
 
       span:first-child {
-        font-size: 12px;
+        font-size: 14px;
         color: #666;
+        padding-right: 8px;
       }
 
       span:last-child {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
       }
     }
